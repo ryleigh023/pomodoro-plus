@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro+</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://www.fontzip.com/storage/2019/07/01/zoika/webfonts/Zoika.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="videoplayback.mp4" type="video/mp4">
+  </video>
+
+  <header>
+    <h1>Pomodoro+</h1>
+    <p class="tagline">"To do two things at once is to do neither".</p>
+  </header>
+<button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
+
+  <!-- Timer -->
+  <section class="timer-section">
+    <h2 id="timer">25:00</h2>
+    <div class="controls">
+      <button class="btn-green" id="start">Start</button>
+      <button class="btn-yellow" id="pause">Pause</button>
+      <button class="btn-red" id="reset">Reset</button>
+    </div>
+  </section>
+
+  <!-- Ambient Sounds -->
+  <div class="ambient-container">
+    <label for="sound-select">Ambient Sounds</label><br>
+    <select id="sound-select">
+      <option value="none">None</option>
+      <option value="sounds/lofi-synth-pattern-29946.mp3">Lofi</option>
+      <option value="sounds/calming-rain-257596.mp3">Rain</option>
+      <option value="sounds/nature-ambience-323729.mp3">Nature</option>
+      
+    </select>
+  </div>
+
+  <!-- To-do List -->
+  <section class="todo-section">
+    <h3>To-Do</h3>
+    <input type="text" id="todo-input" placeholder="Add a task">
+    <button id="add-todo">Add</button>
+    <ul id="todo-list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+  made with ❤️ by ramya
+</footer>
+
+</body>
+</html>
